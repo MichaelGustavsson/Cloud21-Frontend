@@ -29,12 +29,13 @@ header {
   margin: 0 30px;
 }
 
-p {
-  margin: 10px 0;
-}
-
 a {
   text-decoration: none;
+  color: #333;
+}
+
+p {
+  margin: 10px 0;
 }
 
 .info-details {
@@ -45,7 +46,6 @@ a {
 #showcase {
   background: url('/content/img/showcase.jpg') center center/cover no-repeat;
   height: 600px;
-  width: 100%;
 }
 
 .showcase-content {
@@ -93,12 +93,21 @@ a {
   padding-bottom: 30px;
 }
 
+/* Features */
 .box {
   float: left;
   width: 33.3%;
   padding: 50px;
   text-align: center;
   overflow: hidden;
+}
+
+.box p {
+  padding-bottom: 20px;
+}
+
+.box i {
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -109,11 +118,8 @@ a {
   color: #fff;
 }
 
-/* .clear {
-  clear: both;
-} */
-
 .container {
+  margin: auto;
   max-width: 900px;
   padding-top: 60px;
   padding-left: 20px;
@@ -219,6 +225,11 @@ a {
 .btn-light {
   background: #f4f4f4;
   color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
 }
 
 .bg-primary {
