@@ -44,7 +44,8 @@ p {
 }
 
 #showcase {
-  background: url('/content/img/showcase.jpg') center center/cover no-repeat;
+  background: url('/dag-4/content/img/showcase.jpg') center center/cover
+    no-repeat;
   height: 600px;
 }
 
@@ -72,7 +73,7 @@ p {
 }
 
 #gallery-content .gallery-image {
-  background: url('/content/img/show.jpg') center center/cover no-repeat;
+  background: url('/dag-4/content/img/show.jpg') center center/cover no-repeat;
   width: 50%;
   min-height: 100%;
   float: left;
