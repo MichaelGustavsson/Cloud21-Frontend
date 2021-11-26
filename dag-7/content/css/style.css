@@ -25,7 +25,6 @@ h1 {
 
 main,
 header {
-  /* max-width: 1100px; */
   margin: 0;
 }
 
@@ -43,7 +42,7 @@ p {
   background-color: lightblue;
 }
 
-#showcase {
+/* #showcase {
   background: url('../img/landing.jpg') center center/cover no-repeat;
   position: relative;
   height: 100vh;
@@ -121,10 +120,10 @@ p {
 
 #gallery .column-2 p {
   padding-bottom: 2rem;
-}
+} */
 
 /* Features */
-#features {
+/* #features {
   display: flex;
   justify-content: center;
 }
@@ -141,7 +140,7 @@ p {
 
 .box p {
   padding: 0 1.3rem 2rem 1.3rem;
-}
+} */
 
 .footer {
   text-align: center;
@@ -172,9 +171,6 @@ p {
   height: 4.5rem;
   padding: 0 2rem;
   z-index: 2;
-  /* background: #333;
-  color: #fff;
-  overflow: hidden; */
 }
 
 #navbar a {
@@ -192,28 +188,12 @@ p {
 
 #navbar ul li a:hover,
 #navbar ul li a.active {
-  /* background: #6b6b6b; */
-  /* color: #f7c08a; */
   border-bottom: #2196f3 solid 2px;
 }
 
 #navbar .logo {
   font-weight: 400;
 }
-
-.text-primary {
-  color: #2196f3;
-}
-
-/* #navbar ul li {
-  float: left; 
-}*/
-
-/* #navbar ul li a {
-  display: block;
-  padding: 15px;
-  text-align: center;
-} */
 
 #main-image {
   background: url('../img/Westcoast-1.jpg') center center/cover no-repeat;
@@ -260,41 +240,4 @@ p {
 
 .card p {
   text-align: center;
-}
-
-/* Utilities */
-.btn {
-  display: inline-block;
-  color: #fff;
-  background-color: #333;
-  font-size: 18px;
-  padding: 8px 20px;
-  border: none;
-  cursor: pointer;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.btn:hover {
-  background: #f7c08a;
-  color: #333;
-}
-
-.btn-light {
-  background: #f4f4f4;
-  color: #333;
-}
-
-.bg-dark {
-  background: #333;
-  color: #f4f4f4;
-}
-
-.bg-primary {
-  background: #f7c08a;
-}
-
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
 }
