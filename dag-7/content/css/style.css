@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
 }
 
 body {
@@ -131,35 +131,60 @@ p {
 }
 
 #navbar {
+  display: flex;
+  flex-direction: row;
   background: #333;
+  opacity: 0.9;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5rem;
+  padding: 0 2rem;
+  /* background: #333;
   color: #fff;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 #navbar a {
   color: #fff;
+  padding: 0.8rem 0.5rem;
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
 }
 
 #navbar ul {
+  display: flex;
+  flex-direction: row;
   list-style: none;
-  float: right;
-}
-
-#navbar ul li {
-  float: left;
-}
-
-#navbar ul li a {
-  display: block;
-  padding: 15px;
-  text-align: center;
 }
 
 #navbar ul li a:hover,
 #navbar ul li a.active {
-  background: #6b6b6b;
-  color: #f7c08a;
+  /* background: #6b6b6b; */
+  /* color: #f7c08a; */
+  border-bottom: #2196f3 solid 2px;
 }
+
+#navbar .logo {
+  font-weight: 400;
+}
+
+.text-primary {
+  color: #2196f3;
+}
+
+/* #navbar ul li {
+  float: left; 
+}*/
+
+/* #navbar ul li a {
+  display: block;
+  padding: 15px;
+  text-align: center;
+} */
 
 #main-image {
   background: url('../img/Westcoast-1.jpg') center center/cover no-repeat;
