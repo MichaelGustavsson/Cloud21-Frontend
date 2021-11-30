@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Targeted Selectors</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Hitta alla paragraf element inuti ett section element */
+      section p {
+        background: #666;
+        color: #f4f4f4;
+      }
+
+      /* Hitta endast direkta barn element av type p i ett section element */
+      section > p {
+        background: #ddd;
+        color: #000;
+      }
+
+      /* Hitta ett paragraf element(p) som är placerat direkt efter elementet section */
+      section + p {
+        background-color: orange;
+      }
+
+      /* Hitta element baserat på attribut */
+      a[target='_blank'] {
+        background: red;
+        color: white;
+        text-decoration: none;
+      }
+
+      /* input {
+        width: 100%;
+        margin: 5px;
+      } */
+      input[type='text'],
+      input[type='email'] {
+        width: 100%;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui
+          sunt incidunt ipsum commodi dolore.
+        </p>
+        <ul>
+          <li>item 1</li>
+          <li><p>item 2</p></li>
+          <li>item 3</li>
+        </ul>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+          veniam? Nisi distinctio voluptatem suscipit pariatur!
+        </p>
+      </section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, vitae!
+      </p>
+      <a href="#">Sidan 1</a>
+      <a href="#" target="_self">Sidan 2</a>
+      <a href="https://www.iths.se" target="_blank">Sidan 3</a>
+      <br /><br />
+      <hr />
+      <form>
+        <input type="text" name="" id="" placeholder="Förnamn" />
+        <input type="email" name="" id="" placeholder="E-post" />
+        <input type="submit" value="Skicka" />
+      </form>
+    </main>
+  </body>
+</html>
