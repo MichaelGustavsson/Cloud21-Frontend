@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Span</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .item:first-child {
+        /* grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3; */
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+      }
+
+      .item:nth-child(13) {
+        grid-column: 2 / span 3;
+        grid-row: 5 / span 2;
+      }
+
+      .item {
+        padding: 3rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background: #f4f4f4;
+        border: #888 1px solid;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="item">Rubrik 1</div>
+      <div class="item">Rubrik 2</div>
+      <div class="item">Rubrik 3</div>
+      <div class="item">Rubrik 4</div>
+      <div class="item">Rubrik 5</div>
+      <div class="item">Rubrik 6</div>
+      <div class="item">Rubrik 7</div>
+      <div class="item">Rubrik 8</div>
+      <div class="item">Rubrik 9</div>
+      <div class="item">Rubrik 10</div>
+      <div class="item">Rubrik 11</div>
+      <div class="item">Rubrik 12</div>
+      <div class="item">Rubrik 13</div>
+      <div class="item">Rubrik 14</div>
+      <div class="item">Rubrik 15</div>
+      <div class="item">Rubrik 16</div>
+      <div class="item">Rubrik 17</div>
+      <div class="item">Rubrik 18</div>
+      <div class="item">Rubrik 19</div>
+      <div class="item">Rubrik 20</div>
+      <div class="item">Rubrik 21</div>
+      <div class="item">Rubrik 22</div>
+      <div class="item">Rubrik 23</div>
+      <div class="item">Rubrik 24</div>
+      <div class="item">Rubrik 25</div>
+      <div class="item">Rubrik 26</div>
+      <div class="item">Rubrik 27</div>
+      <div class="item">Rubrik 28</div>
+      <div class="item">Rubrik 29</div>
+      <div class="item">Rubrik 30</div>
+    </section>
+  </body>
+</html>
