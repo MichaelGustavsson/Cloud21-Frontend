@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nth Child</title>
+    <style>
+      li {
+        padding: 0.25rem;
+        margin: 0.25rem;
+        list-style: none;
+      }
+
+      /* Först elementet i listan */
+      li:first-child {
+        background-color: blueviolet;
+      }
+
+      /* Sista elementet i listan */
+      li:last-child {
+        background-color: blueviolet;
+      }
+
+      /* Elementet på position 7 */
+      li:nth-child(7) {
+        background-color: red;
+      }
+
+      /* Endast var 4:e element */
+      li:nth-child(4n + 0) {
+        background-color: orange;
+      }
+
+      /* Endast var 3:e element med start vid 8:e elementet */
+      li:nth-child(3n + 8) {
+        background-color: aquamarine;
+      }
+
+      /* Ojämna element */
+      li:nth-child(odd) {
+        background-color: blue;
+        color: white;
+      }
+
+      /* Jämna element */
+      li:nth-child(even) {
+        background-color: yellow;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Element 1</li>
+      <li>Element 2</li>
+      <li>Element 3</li>
+      <li>Element 4</li>
+      <li>Element 5</li>
+      <li>Element 6</li>
+      <li>Element 7</li>
+      <li>Element 8</li>
+      <li>Element 9</li>
+      <li>Element 10</li>
+      <li>Element 11</li>
+      <li>Element 12</li>
+      <li>Element 13</li>
+      <li>Element 14</li>
+      <li>Element 15</li>
+      <li>Element 16</li>
+      <li>Element 17</li>
+      <li>Element 18</li>
+      <li>Element 19</li>
+      <li>Element 20</li>
+    </ul>
+  </body>
+</html>
