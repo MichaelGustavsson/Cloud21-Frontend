@@ -82,6 +82,9 @@ header::before {
   border: #37a08e 1px solid;
 }
 
+.form-wrap button {
+  transition: all 1s ease-in-out;
+}
 .form-wrap button:hover {
   background: #37a08e;
   font-weight: bold;
