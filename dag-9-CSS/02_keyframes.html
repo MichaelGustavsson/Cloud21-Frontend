@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe animation</title>
+    <style>
+        body{
+            background: #333;
+        }
+
+        .box{
+            background: #f4f4f4;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* animation-name: animate_demo;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out; */
+            animation: animate_demo 5s forwards ease-in-out;
+        }
+
+        @keyframes animate_demo{
+            from{
+                top: 0;
+            }
+            to {
+                width: 600px;
+                top: 300px;
+                background: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="box"></section>
+</body>
+</html>
